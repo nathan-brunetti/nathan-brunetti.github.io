@@ -36,12 +36,15 @@ p {
 }
 .intro {
   max-width: 1000px;
+  text-shadow: 2px 2px 5px #000000;
+  margin: 0 auto;
 }
 .intro h1 {
   font-weight:200;
   color:#FFFFFF;
   text-align: left;
-  padding-top: 25px;
+  font-size:30px;
+  line-height: 1.2em;
 }
 .container-fluid.main {
   background: rgba(0,0,0,0.7);
@@ -57,21 +60,32 @@ p {
   max-width: 75%;
   margin: 0 auto;
 }
-.profile {
+.img-container {
   border-radius: 50%;
   background-color: orange;
   padding: 2px;
   margin: 0px 25px 0px 25px;
   height: 160px;
   width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+.item {
+  position: absolute;
+  top: 0
+  left: 0;
+}
+.item img {
+  border-radius: 50%;
+  height: 98%;
+  width: 98%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
-.profile:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.img-container:hover .item img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .section1 {
   background-color: rgba(255,255,255,0.9);
