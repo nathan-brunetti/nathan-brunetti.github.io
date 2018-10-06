@@ -62,9 +62,9 @@ p {
 }
 .img-container {
   border-radius: 50%;
-  background-color: orange;
+  border: 5px solid orange;
   padding: 2px;
-  margin: 0px 25px 0px 25px;
+  margin: 0px 25px 20px 25px;
   height: 160px;
   width: 160px;
   overflow: hidden;
@@ -72,13 +72,13 @@ p {
 }
 .item {
   position: absolute;
-  top: 0
+  top: 0;
   left: 0;
 }
 .item img {
   border-radius: 50%;
-  height: 98%;
-  width: 98%;
+  height: 160px;
+  width: 160px;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
 }
@@ -196,6 +196,6 @@ i:hover {
 }
 
 
-
+@media (max-width: 575.98px) { .intro h1 { font-size:20px; display: inline-block; } }
 
 
