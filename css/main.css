@@ -62,7 +62,7 @@ p {
 }
 .img-container {
   border-radius: 50%;
-  border: 5px solid orange;
+  border: 10px solid orange;
   padding: 2px;
   margin: 0px 25px 20px 25px;
   height: 160px;
