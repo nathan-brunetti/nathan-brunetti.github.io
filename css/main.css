@@ -62,18 +62,19 @@ p {
 }
 .img-container {
   border-radius: 50%;
-  border: 10px solid orange;
+  border: 5px solid orange;
   padding: 2px;
   margin: 0px 25px 20px 25px;
   height: 160px;
   width: 160px;
   overflow: hidden;
   position: relative;
+  background-color: orange;
 }
 .item {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -5px;
 }
 .item img {
   border-radius: 50%;
@@ -86,6 +87,18 @@ p {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+}
+.img-name {
+  display: none;
+  margin-top: -100px;
+}
+.item:hover .img-name {
+  display: block;
+  color:#000000;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-shadow: 0 0 0;
+  font-weight: bold;
 }
 .section1 {
   background-color: rgba(255,255,255,0.9);
